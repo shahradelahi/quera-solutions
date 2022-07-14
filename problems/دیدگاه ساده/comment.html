@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Comment</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+
+<div id="comment" class="boxes">
+    <div id="profile"></div>
+    <div id="likes"></div>
+    <svg height=60 width=60 style="top : 120px; left : 12px; position : absolute;">
+        <path stroke-width="6" stroke="#60e16d" d="M10 35 L20 50 L50 10" fill="none"></path>
+    </svg>
+    <svg height=150 width=380 style="top : 25px; left : 100px; position : absolute;">
+        <path stroke="#111" stroke-width="1px"
+              d="M0 2 l100 0 M0 20 l70 0 M0 40 l500 0 M0 60 l500 0 M0 80 l300 0 M0 100 l350 0 M0 120 l250 0 M0 140 l200 0"
+              fill="none"></path>
+    </svg>
+</div>
+
+<!-- <script type="text/json" src="./count.json"></script> -->
+
+<script>
+    fetch('./count.json')
+    .then(res=>res.json())
+    // .then(console.log)
+    // const data = JSON.parse(count)
+   .then( res=>document.querySelector('#likes').innerText  = res.count )
+</script>
+
+</body>
+</html>

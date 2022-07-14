@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+#comment {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 100px;
+    border: 5px solid #111;
+    background-color: #DDD;
+    border-radius: 10px;
+}
+
+#profile {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    left: 15px;
+    border: 3px solid #444;
+    background-color: #32e2a7;
+    border-radius: 40px;
+}
+
+#likes {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    top: 100px;
+    left: 15px;
+    color: #555;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 40px;
+}

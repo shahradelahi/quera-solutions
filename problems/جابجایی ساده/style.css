@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #095057;
+    background-color: #20979e;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+</body>
+
+<script>
+    const body = document.querySelector('body')
+    let width;
+
+    window.addEventListener('resize', () => {
+        console.log('ss')
+        width = innerWidth;
+
+        // switch(width){
+        //     case : 
+
+        // }
+
+        if (width < 600) {
+            body.style.backgroundColor = '#f00'
+        } else if (width < 900) {
+            body.style.backgroundColor = '#ff0'
+        } else if (width > 900) {
+            body.style.backgroundColor = '#0f0'
+        }
+
+    })
+</script>
+
+</html>
