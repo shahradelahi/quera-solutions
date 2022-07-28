@@ -9,4 +9,4 @@ for i in range(1, a + 1):
 
 print(ans)
 
-# TODO: Learn it once again
+# todo: review this problem again
